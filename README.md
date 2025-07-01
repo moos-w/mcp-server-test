@@ -10,7 +10,7 @@ This template provides a streamlined foundation for building Model Context Proto
 
 - Ready-to-use MCP server implementation
 - Configurable transport modes (stdio, SSE)
-- Example weather service integration (NWS API)
+- Simple CSV data integration for experimentation
 - Clean, well-documented code structure
 - Minimal dependencies
 - **Embedded MCP specifications and documentation** for improved AI tool understanding
@@ -33,7 +33,7 @@ This template includes comprehensive MCP documentation directly in the project:
 
 - **Python SDK Guide** (`protocals/sdk.md`): Detailed documentation for the MCP Python SDK, making it easier for AI tools to provide accurate code suggestions and understand the library's capabilities.
 
-- **Example Implementation** (`protocals/example_weather.py`): A practical weather service implementation demonstrating real-world MCP server patterns and best practices.
+- **Example Implementation** (`protocals/example_weather.py`): Demonstrates how to build MCP tools.
 
 Having these resources embedded in the project enables AI coding assistants to better understand MCP concepts and provide more accurate, contextually relevant suggestions during development.
 
@@ -42,7 +42,6 @@ Having these resources embedded in the project enables AI coding assistants to b
 - Python 3.12+
 - Dependencies:
   - `mcp>=1.4.1`
-  - `httpx>=0.28.1`
   - `starlette>=0.46.1`
   - `uvicorn>=0.34.0`
 
@@ -65,7 +64,7 @@ Having these resources embedded in the project enables AI coding assistants to b
 
 ### Running the Example Server
 
-The template includes a weather service example that demonstrates how to build MCP tools:
+The template includes a CSV example that demonstrates how to build MCP tools:
 
 ```bash
 # Run with stdio transport (for CLI tools)
@@ -114,7 +113,7 @@ To create your own MCP tools:
 
 ## Project Structure
 
-- `server.py`: Main MCP server implementation with example weather tools
+- `server.py`: Main MCP server implementation with CSV example tools
 - `main.py`: Simple entry point for custom code
 - `protocals/`: Documentation and example protocols
   - `mcp.md`: Complete MCP specification (~7000 lines)
